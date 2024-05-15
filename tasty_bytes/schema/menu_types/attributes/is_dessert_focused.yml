@@ -1,0 +1,8 @@
+type: calculated_attribute
+entity: menu_types
+name: is_dessert_focused
+owner: david@honeydew.ai
+datatype: bool
+labels: []
+sql: |-
+  menu_types.menu_type in ('Crepes', 'Ice Cream')

@@ -1,0 +1,13 @@
+type: entity
+name: shifts
+owner: david@honeydew.ai
+labels: []
+keys:
+  - shift_id
+key_dataset: shifts
+relations:
+  - target_entity: order_header
+    rel_type: one-to-many
+    connection:
+      - src_field: shift_id
+        target_field: shift_id

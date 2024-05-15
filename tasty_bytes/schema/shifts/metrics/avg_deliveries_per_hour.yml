@@ -1,0 +1,8 @@
+type: metric
+entity: shifts
+name: avg_deliveries_per_hour
+owner: david@honeydew.ai
+datatype: number
+labels: []
+sql: |-
+  avg(shifts.num_deliveries / shifts.shift_length_hours)

@@ -1,0 +1,12 @@
+type: calculated_attribute
+entity: order_detail
+name: total_revenue_by_customer_menu_type
+owner: david@honeydew.ai
+datatype: number
+labels: []
+sql: |-
+  case 
+      when order_header.customer_id is not null 
+      then 
+          order_detail.revenue GROUP BY (customer_loyalty.customer_id, menu_types.menu_type_id) 
+  end

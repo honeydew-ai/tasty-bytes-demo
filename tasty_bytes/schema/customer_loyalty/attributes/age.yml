@@ -1,0 +1,8 @@
+type: calculated_attribute
+entity: customer_loyalty
+name: age
+owner: david@honeydew.ai
+datatype: number
+labels: []
+sql: |-
+  datediff(year, customer_loyalty.birthday_date, CURRENT_DATE)

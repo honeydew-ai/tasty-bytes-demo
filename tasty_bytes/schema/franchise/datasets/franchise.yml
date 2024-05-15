@@ -1,0 +1,30 @@
+type: dataset
+entity: franchise
+name: franchise
+owner: david@honeydew.ai
+dataset_type: table
+labels: []
+sql: |-
+  FROSTBYTE_TASTY_BYTES.RAW_POS.FRANCHISE
+attributes:
+  - column: CITY
+    name: CITY
+    datatype: string
+  - column: COUNTRY
+    name: COUNTRY
+    datatype: string
+  - column: E_MAIL
+    name: E_MAIL
+    datatype: string
+  - column: FIRST_NAME
+    name: FIRST_NAME
+    datatype: string
+  - column: FRANCHISE_ID
+    name: FRANCHISE_ID
+    datatype: number
+  - column: LAST_NAME
+    name: LAST_NAME
+    datatype: string
+  - column: PHONE_NUMBER
+    name: PHONE_NUMBER
+    datatype: string

@@ -1,0 +1,8 @@
+type: metric
+entity: shifts
+name: avg_deliveries_per_shift
+owner: david@honeydew.ai
+datatype: float
+labels: []
+sql: |-
+  AVG(shifts.num_deliveries)

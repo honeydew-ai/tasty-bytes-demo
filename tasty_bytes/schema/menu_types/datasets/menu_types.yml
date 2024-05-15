@@ -1,0 +1,15 @@
+type: dataset
+entity: menu_types
+name: menu_types
+owner: david@honeydew.ai
+dataset_type: entity
+labels: []
+sql: |-
+  menu
+attributes:
+  - column: menu_type
+    name: menu_type
+    datatype: string
+  - column: menu_type_id
+    name: menu_type_id
+    datatype: number

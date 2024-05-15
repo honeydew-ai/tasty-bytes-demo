@@ -1,0 +1,16 @@
+type: entity
+name: customer_city
+owner: david@honeydew.ai
+labels: []
+keys:
+  - CITY
+  - COUNTRY
+key_dataset: customer_city
+relations:
+  - target_entity: customer_loyalty
+    rel_type: one-to-many
+    connection:
+      - src_field: CITY
+        target_field: city
+      - src_field: COUNTRY
+        target_field: country

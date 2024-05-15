@@ -1,0 +1,13 @@
+type: calculated_attribute
+entity: customer_city
+name: city_type
+owner: david@honeydew.ai
+datatype: string
+labels: []
+sql: |-
+  CASE
+          WHEN customer_city.city_population <= 50000 THEN 'Small City'
+          WHEN customer_city.city_population > 50000 AND customer_city.city_population <= 250000 THEN 'Medium City'
+          WHEN customer_city.city_population > 250000 AND customer_city.city_population <= 1000000 THEN 'Large City'
+          ELSE 'Metropolitan Area'
+      END

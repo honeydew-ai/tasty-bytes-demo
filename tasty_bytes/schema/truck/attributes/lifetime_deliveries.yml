@@ -1,0 +1,8 @@
+type: calculated_attribute
+entity: truck
+name: lifetime_deliveries
+owner: david@honeydew.ai
+datatype: number
+labels: []
+sql: |-
+  order_header.count

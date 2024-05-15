@@ -1,0 +1,8 @@
+type: metric
+entity: order_detail
+name: sum_quantity
+owner: david@honeydew.ai
+datatype: number
+labels: []
+sql: |-
+  SUM(order_detail.quantity)

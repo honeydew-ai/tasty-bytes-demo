@@ -1,0 +1,8 @@
+type: metric
+entity: truck
+name: max_age_in_years
+owner: david@honeydew.ai
+datatype: number
+labels: []
+sql: |-
+  MAX(truck.age_in_years)

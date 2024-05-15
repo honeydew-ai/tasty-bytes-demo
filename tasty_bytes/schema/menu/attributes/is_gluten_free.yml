@@ -1,0 +1,8 @@
+type: calculated_attribute
+entity: menu
+name: is_gluten_free
+owner: david@honeydew.ai
+datatype: bool
+labels: []
+sql: |-
+  menu.health_metrics_record:is_gluten_free_flag::boolean

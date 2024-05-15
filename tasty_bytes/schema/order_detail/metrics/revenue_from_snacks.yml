@@ -1,0 +1,11 @@
+type: metric
+entity: order_detail
+name: revenue_from_snacks
+owner: david@honeydew.ai
+description: |-
+  Revenue as accounted only from snack items as marked in menu category
+datatype: number
+labels: []
+folder: Revenue Metrics
+sql: |-
+  order_detail.revenue FILTER (WHERE menu.item_category = 'Snack')

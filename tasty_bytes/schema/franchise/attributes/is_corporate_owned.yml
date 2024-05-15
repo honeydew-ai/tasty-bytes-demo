@@ -1,0 +1,8 @@
+type: calculated_attribute
+entity: franchise
+name: is_corporate_owned
+owner: david@honeydew.ai
+datatype: bool
+labels: []
+sql: |-
+  franchise.first_name = 'Corporate' and franchise.last_name = 'Owned'

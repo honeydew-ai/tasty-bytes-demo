@@ -1,0 +1,11 @@
+type: calculated_attribute
+entity: menu
+name: profit_margin_bin
+owner: david@honeydew.ai
+datatype: string
+labels: []
+sql: |-
+  CASE
+    WHEN menu.profit_margin < 0.80  THEN  'Low'
+    WHEN menu.profit_margin >= 0.80  THEN  'High'
+  END

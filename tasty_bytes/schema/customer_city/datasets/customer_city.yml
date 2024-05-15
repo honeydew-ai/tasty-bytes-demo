@@ -1,0 +1,30 @@
+type: dataset
+entity: customer_city
+name: customer_city
+owner: david@honeydew.ai
+dataset_type: table
+labels: []
+sql: |-
+  FROSTBYTE_TASTY_BYTES.RAW_POS.COUNTRY
+attributes:
+  - column: CITY
+    name: CITY
+    datatype: string
+  - column: CITY_ID
+    name: CITY_ID
+    datatype: number
+  - column: CITY_POPULATION
+    name: CITY_POPULATION_STR
+    datatype: string
+  - column: COUNTRY
+    name: COUNTRY
+    datatype: string
+  - column: COUNTRY_ID
+    name: COUNTRY_ID
+    datatype: number
+  - column: ISO_COUNTRY
+    name: ISO_COUNTRY
+    datatype: string
+  - column: ISO_CURRENCY
+    name: ISO_CURRENCY
+    datatype: string

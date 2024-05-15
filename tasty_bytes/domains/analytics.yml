@@ -1,0 +1,19 @@
+type: domain
+name: analytics
+owner: david@honeydew.ai
+labels: []
+filters: []
+entities:
+  - name: customer_city
+  - name: customer_loyalty
+  - name: date
+  - name: franchise
+  - name: location
+  - name: location_city
+  - name: menu
+  - name: menu_types
+  - name: order_detail
+  - name: order_header
+  - name: shifts
+  - name: truck
+active_roles: []

@@ -1,0 +1,13 @@
+type: entity
+name: menu_types
+owner: david@honeydew.ai
+labels: []
+keys:
+  - menu_type_id
+key_dataset: menu_types
+relations:
+  - target_entity: menu
+    rel_type: one-to-many
+    connection:
+      - src_field: menu_type_id
+        target_field: menu_type_id

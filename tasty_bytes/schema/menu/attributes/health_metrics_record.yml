@@ -1,0 +1,8 @@
+type: calculated_attribute
+entity: menu
+name: health_metrics_record
+owner: david@honeydew.ai
+datatype: string
+labels: []
+sql: |-
+  menu.menu_item_health_metrics_obj:menu_item_health_metrics[0]

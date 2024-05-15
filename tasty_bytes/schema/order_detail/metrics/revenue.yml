@@ -1,0 +1,11 @@
+type: metric
+entity: order_detail
+name: revenue
+owner: david@honeydew.ai
+description: |-
+  Revenue (from recorded sale price, discount included)
+datatype: float
+labels: []
+folder: Revenue Metrics
+sql: |-
+  sum(order_detail.price)

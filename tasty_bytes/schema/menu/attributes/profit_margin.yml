@@ -1,0 +1,8 @@
+type: calculated_attribute
+entity: menu
+name: profit_margin
+owner: david@honeydew.ai
+datatype: float
+labels: []
+sql: |-
+  order_detail.profit_margin

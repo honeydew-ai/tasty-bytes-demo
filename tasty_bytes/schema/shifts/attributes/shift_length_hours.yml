@@ -1,0 +1,8 @@
+type: calculated_attribute
+entity: shifts
+name: shift_length_hours
+owner: david@honeydew.ai
+datatype: float
+labels: []
+sql: |-
+  datediff(second, shifts.shift_start_time, shifts.shift_end_time) / 3600.

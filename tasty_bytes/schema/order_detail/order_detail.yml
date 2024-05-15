@@ -1,0 +1,13 @@
+type: entity
+name: order_detail
+owner: david@honeydew.ai
+labels: []
+keys:
+  - order_detail_id
+key_dataset: order_detail
+relations:
+  - target_entity: order_header
+    rel_type: many-to-one
+    connection:
+      - src_field: order_id
+        target_field: order_id

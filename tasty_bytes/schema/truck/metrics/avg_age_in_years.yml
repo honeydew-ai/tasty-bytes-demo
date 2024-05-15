@@ -1,0 +1,8 @@
+type: metric
+entity: truck
+name: avg_age_in_years
+owner: david@honeydew.ai
+datatype: float
+labels: []
+sql: |-
+  AVG(truck.age_in_years)

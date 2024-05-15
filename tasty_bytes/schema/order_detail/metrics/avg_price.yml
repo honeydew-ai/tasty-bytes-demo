@@ -1,0 +1,10 @@
+type: metric
+entity: order_detail
+name: avg_price
+owner: david@honeydew.ai
+description: |-
+  Average per-item sale price
+datatype: float
+labels: []
+sql: |-
+  AVG(order_detail.price)

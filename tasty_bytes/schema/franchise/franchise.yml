@@ -1,0 +1,8 @@
+type: entity
+name: franchise
+owner: david@honeydew.ai
+labels: []
+keys:
+  - FRANCHISE_ID
+key_dataset: franchise
+relations: []

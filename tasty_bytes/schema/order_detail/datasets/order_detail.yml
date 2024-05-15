@@ -1,0 +1,38 @@
+type: dataset
+entity: order_detail
+name: order_detail
+owner: david@honeydew.ai
+dataset_type: table
+labels: []
+sql: |-
+  FROSTBYTE_TASTY_BYTES.RAW_POS.ORDER_DETAIL
+attributes:
+  - column: DISCOUNT_ID
+    name: DISCOUNT_ID
+    datatype: string
+  - column: LINE_NUMBER
+    name: LINE_NUMBER
+    datatype: number
+  - column: MENU_ITEM_ID
+    name: MENU_ITEM_ID
+    datatype: number
+  - column: ORDER_DETAIL_ID
+    name: ORDER_DETAIL_ID
+    datatype: number
+  - column: ORDER_ID
+    name: ORDER_ID
+    datatype: number
+  - column: ORDER_ITEM_DISCOUNT_AMOUNT
+    name: ORDER_ITEM_DISCOUNT_AMOUNT
+    datatype: string
+  - column: PRICE
+    name: PRICE
+    description: |-
+      Total price for items (quantity times unit price), discount included
+    datatype: number
+  - column: QUANTITY
+    name: QUANTITY
+    datatype: number
+  - column: UNIT_PRICE
+    name: UNIT_PRICE
+    datatype: number

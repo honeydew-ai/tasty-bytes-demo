@@ -1,0 +1,8 @@
+type: calculated_attribute
+entity: truck
+name: age_in_years
+owner: david@honeydew.ai
+datatype: number
+labels: []
+sql: |-
+  (YEAR(CURRENT_DATE()) - truck.year)

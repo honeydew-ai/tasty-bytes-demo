@@ -1,0 +1,16 @@
+type: calculated_attribute
+entity: customer_loyalty
+name: age_group
+owner: david@honeydew.ai
+datatype: string
+labels: []
+sql: |-
+  CASE
+    WHEN customer_loyalty.age < 18  THEN  '0-18'
+    WHEN customer_loyalty.age < 25  THEN  '18-25'
+    WHEN customer_loyalty.age < 35  THEN  '25-35'
+    WHEN customer_loyalty.age < 45  THEN  '35-45'
+    WHEN customer_loyalty.age < 55  THEN  '45-55'
+    WHEN customer_loyalty.age < 65  THEN  '55-65'
+    WHEN customer_loyalty.age >= 65  THEN  '65+'
+  END

@@ -1,0 +1,8 @@
+type: calculated_attribute
+entity: order_header
+name: order_date
+owner: david@honeydew.ai
+datatype: date
+labels: []
+sql: |-
+  date(order_header.order_ts)

@@ -1,0 +1,42 @@
+type: dataset
+entity: menu
+name: menu
+owner: david@honeydew.ai
+dataset_type: table
+labels: []
+sql: |-
+  FROSTBYTE_TASTY_BYTES.RAW_POS.MENU
+attributes:
+  - column: COST_OF_GOODS_USD
+    name: COST_OF_GOODS_USD
+    datatype: number
+  - column: ITEM_CATEGORY
+    name: ITEM_CATEGORY
+    datatype: string
+  - column: ITEM_SUBCATEGORY
+    name: ITEM_SUBCATEGORY
+    datatype: string
+  - column: MENU_ID
+    name: MENU_ID
+    datatype: number
+  - column: MENU_ITEM_HEALTH_METRICS_OBJ
+    name: MENU_ITEM_HEALTH_METRICS_OBJ
+    datatype: string
+  - column: MENU_ITEM_ID
+    name: MENU_ITEM_ID
+    datatype: number
+  - column: MENU_ITEM_NAME
+    name: MENU_ITEM_NAME
+    datatype: string
+  - column: MENU_TYPE
+    name: MENU_TYPE
+    datatype: string
+  - column: MENU_TYPE_ID
+    name: MENU_TYPE_ID
+    datatype: number
+  - column: SALE_PRICE_USD
+    name: SALE_PRICE_USD
+    datatype: number
+  - column: TRUCK_BRAND_NAME
+    name: TRUCK_BRAND_NAME
+    datatype: string

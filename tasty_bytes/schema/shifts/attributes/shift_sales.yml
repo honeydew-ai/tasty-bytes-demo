@@ -1,0 +1,8 @@
+type: calculated_attribute
+entity: shifts
+name: shift_sales
+owner: david@honeydew.ai
+datatype: float
+labels: []
+sql: |-
+  order_detail.revenue

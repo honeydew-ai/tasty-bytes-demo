@@ -1,0 +1,10 @@
+type: calculated_attribute
+entity: menu
+name: ingredients_list
+owner: david@honeydew.ai
+description: |-
+  List of ingridients as comma separated string
+datatype: string
+labels: []
+sql: |-
+  menu.health_metrics_record:ingredients::varchar

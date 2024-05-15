@@ -1,0 +1,9 @@
+type: metric
+entity: order_detail
+name: profit_margin
+owner: david@honeydew.ai
+datatype: float
+labels: []
+folder: Revenue Metrics
+sql: |-
+  order_detail.profit / order_detail.revenue

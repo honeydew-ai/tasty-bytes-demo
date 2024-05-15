@@ -1,0 +1,13 @@
+type: entity
+name: order_header
+owner: david@honeydew.ai
+labels: []
+keys:
+  - ORDER_ID
+key_dataset: order_header
+relations:
+  - target_entity: customer_loyalty
+    rel_type: many-to-one
+    connection:
+      - src_field: customer_id
+        target_field: customer_id

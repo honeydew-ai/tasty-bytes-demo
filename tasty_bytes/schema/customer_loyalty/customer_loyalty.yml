@@ -1,0 +1,8 @@
+type: entity
+name: customer_loyalty
+owner: david@honeydew.ai
+labels: []
+keys:
+  - CUSTOMER_ID
+key_dataset: customer_loyalty
+relations: []

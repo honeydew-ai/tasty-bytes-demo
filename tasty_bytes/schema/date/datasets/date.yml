@@ -1,0 +1,66 @@
+type: dataset
+entity: date
+name: date
+owner: david@honeydew.ai
+dataset_type: sql
+labels: []
+sql: |-
+  SELECT
+      DATEADD(DAY, row_number() over (order by seq), CURRENT_DATE - 365*5)::DATE AS DATE,
+      DAYOFMONTH(DATE) as DAY_OF_MONTH,
+      TO_VARCHAR(DATE, 'dy') as DAY_OF_WEEK,
+      DAYOFWEEK(DATE) as DAY_OF_WEEK_INDEX,
+      DAYOFYEAR(DATE) as DAY_OF_YEAR,
+      DATE_TRUNC('month', DATE) as MONTH,
+      MONTHNAME(DATE) as MONTH_NAME,
+      MONTH(DATE) as MONTH_NUM,
+      DATE_TRUNC('quarter', DATE) as QUARTER,
+      'Q' || QUARTER(DATE) as QUARTER_OF_YEAR,
+      DATE_TRUNC('week', DATE) as WEEK,
+      WEEKOFYEAR(DATE) as WEEK_OF_YEAR,
+      YEAR(DATE) as YEAR,
+      CURRENT_DATE() AS TODAY
+  FROM (SELECT SEQ4() as seq FROM TABLE(GENERATOR(ROWCOUNT=>365*5)))
+attributes:
+  - column: DATE
+    name: DATE
+    datatype: date
+  - column: DAY_OF_MONTH
+    name: DAY_OF_MONTH
+    datatype: number
+  - column: DAY_OF_WEEK
+    name: DAY_OF_WEEK
+    datatype: string
+  - column: DAY_OF_WEEK_INDEX
+    name: DAY_OF_WEEK_INDEX
+    datatype: number
+  - column: DAY_OF_YEAR
+    name: DAY_OF_YEAR
+    datatype: number
+  - column: MONTH
+    name: MONTH
+    datatype: date
+  - column: MONTH_NAME
+    name: MONTH_NAME
+    datatype: string
+  - column: MONTH_NUM
+    name: MONTH_NUM
+    datatype: number
+  - column: QUARTER
+    name: QUARTER
+    datatype: date
+  - column: QUARTER_OF_YEAR
+    name: QUARTER_OF_YEAR
+    datatype: string
+  - column: TODAY
+    name: TODAY
+    datatype: date
+  - column: WEEK
+    name: WEEK
+    datatype: date
+  - column: WEEK_OF_YEAR
+    name: WEEK_OF_YEAR
+    datatype: number
+  - column: YEAR
+    name: YEAR
+    datatype: number

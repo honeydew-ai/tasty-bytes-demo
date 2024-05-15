@@ -1,0 +1,54 @@
+type: dataset
+entity: customer_loyalty
+name: customer_loyalty
+owner: david@honeydew.ai
+dataset_type: table
+labels: []
+sql: |-
+  FROSTBYTE_TASTY_BYTES.RAW_CUSTOMER.CUSTOMER_LOYALTY
+attributes:
+  - column: BIRTHDAY_DATE
+    name: BIRTHDAY_DATE
+    datatype: date
+  - column: CHILDREN_COUNT
+    name: CHILDREN_COUNT
+    datatype: string
+  - column: CITY
+    name: CITY
+    datatype: string
+  - column: COUNTRY
+    name: COUNTRY
+    datatype: string
+  - column: CUSTOMER_ID
+    name: CUSTOMER_ID
+    datatype: number
+  - column: E_MAIL
+    name: E_MAIL
+    datatype: string
+  - column: FAVOURITE_BRAND
+    name: FAVOURITE_BRAND
+    datatype: string
+  - column: FIRST_NAME
+    name: FIRST_NAME
+    datatype: string
+  - column: GENDER
+    name: GENDER
+    datatype: string
+  - column: LAST_NAME
+    name: LAST_NAME
+    datatype: string
+  - column: MARITAL_STATUS
+    name: MARITAL_STATUS
+    datatype: string
+  - column: PHONE_NUMBER
+    name: PHONE_NUMBER
+    datatype: string
+  - column: POSTAL_CODE
+    name: POSTAL_CODE
+    datatype: string
+  - column: PREFERRED_LANGUAGE
+    name: PREFERRED_LANGUAGE
+    datatype: string
+  - column: SIGN_UP_DATE
+    name: SIGN_UP_DATE
+    datatype: date

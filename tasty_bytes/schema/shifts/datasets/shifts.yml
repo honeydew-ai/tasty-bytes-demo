@@ -1,0 +1,21 @@
+type: dataset
+entity: shifts
+name: shifts
+owner: david@honeydew.ai
+dataset_type: entity
+labels: []
+sql: |-
+  order_header
+attributes:
+  - column: shift_end_time
+    name: shift_end_time
+    datatype: timestamp
+  - column: shift_id
+    name: shift_id
+    datatype: number
+  - column: shift_start_time
+    name: shift_start_time
+    datatype: timestamp
+  - column: truck_id
+    name: truck_id
+    datatype: number

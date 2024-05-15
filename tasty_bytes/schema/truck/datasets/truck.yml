@@ -1,0 +1,51 @@
+type: dataset
+entity: truck
+name: truck
+owner: david@honeydew.ai
+dataset_type: table
+labels: []
+sql: |-
+  FROSTBYTE_TASTY_BYTES.RAW_POS.TRUCK
+attributes:
+  - column: COUNTRY
+    name: COUNTRY
+    datatype: string
+  - column: EV_FLAG
+    name: EV_FLAG
+    datatype: number
+  - column: FRANCHISE_FLAG
+    name: FRANCHISE_FLAG
+    datatype: number
+  - column: FRANCHISE_ID
+    name: FRANCHISE_ID
+    datatype: number
+  - column: ISO_COUNTRY_CODE
+    name: ISO_COUNTRY_CODE
+    datatype: string
+  - column: ISO_REGION
+    name: ISO_REGION
+    datatype: string
+  - column: MAKE
+    name: MAKE_RAW
+    datatype: string
+  - column: MENU_TYPE_ID
+    name: MENU_TYPE_ID
+    datatype: number
+  - column: MODEL
+    name: MODEL
+    datatype: string
+  - column: PRIMARY_CITY
+    name: PRIMARY_CITY
+    datatype: string
+  - column: REGION
+    name: REGION
+    datatype: string
+  - column: TRUCK_ID
+    name: TRUCK_ID
+    datatype: number
+  - column: TRUCK_OPENING_DATE
+    name: TRUCK_OPENING_DATE
+    datatype: date
+  - column: YEAR
+    name: YEAR
+    datatype: number

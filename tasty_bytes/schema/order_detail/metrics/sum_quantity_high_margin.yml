@@ -1,0 +1,8 @@
+type: metric
+entity: order_detail
+name: sum_quantity_high_margin
+owner: david@honeydew.ai
+datatype: float
+labels: []
+sql: |-
+  order_detail.sum_quantity FILTER (WHERE menu.profit_margin_bin = 'High')

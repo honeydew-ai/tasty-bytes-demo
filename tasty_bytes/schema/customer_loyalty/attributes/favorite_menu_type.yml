@@ -1,0 +1,11 @@
+type: calculated_attribute
+entity: customer_loyalty
+name: favorite_menu_type
+owner: david@honeydew.ai
+datatype: string
+labels: []
+sql: |-
+  max_by(
+      menu_types.menu_type,
+      order_detail.total_revenue_by_customer_menu_type
+  )

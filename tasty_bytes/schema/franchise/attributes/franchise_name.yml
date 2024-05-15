@@ -1,0 +1,8 @@
+type: calculated_attribute
+entity: franchise
+name: franchise_name
+owner: david@honeydew.ai
+datatype: string
+labels: []
+sql: |-
+  franchise.first_name || ' ' || franchise.last_name

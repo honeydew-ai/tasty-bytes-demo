@@ -1,0 +1,8 @@
+type: calculated_attribute
+entity: location_city
+name: city_population
+owner: david@honeydew.ai
+datatype: number
+labels: []
+sql: |-
+  location_city.city_population_str::integer

@@ -1,0 +1,13 @@
+type: entity
+name: location
+owner: david@honeydew.ai
+labels: []
+keys:
+  - LOCATION_ID
+key_dataset: location
+relations:
+  - target_entity: order_header
+    rel_type: one-to-many
+    connection:
+      - src_field: LOCATION_ID
+        target_field: location_id

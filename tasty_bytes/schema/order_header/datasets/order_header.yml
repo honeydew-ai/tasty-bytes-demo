@@ -1,0 +1,57 @@
+type: dataset
+entity: order_header
+name: order_header
+owner: david@honeydew.ai
+dataset_type: table
+labels: []
+sql: |-
+  FROSTBYTE_TASTY_BYTES.RAW_POS.ORDER_HEADER
+attributes:
+  - column: CUSTOMER_ID
+    name: CUSTOMER_ID
+    datatype: number
+  - column: DISCOUNT_ID
+    name: DISCOUNT_ID
+    datatype: string
+  - column: LOCATION_ID
+    name: LOCATION_ID
+    datatype: float
+  - column: ORDER_AMOUNT
+    name: ORDER_AMOUNT
+    datatype: number
+  - column: ORDER_CHANNEL
+    name: ORDER_CHANNEL
+    datatype: string
+  - column: ORDER_CURRENCY
+    name: ORDER_CURRENCY
+    datatype: string
+  - column: ORDER_DISCOUNT_AMOUNT
+    name: ORDER_DISCOUNT_AMOUNT
+    datatype: string
+  - column: ORDER_ID
+    name: ORDER_ID
+    datatype: number
+  - column: ORDER_TAX_AMOUNT
+    name: ORDER_TAX_AMOUNT
+    datatype: string
+  - column: ORDER_TOTAL
+    name: ORDER_TOTAL
+    datatype: number
+  - column: ORDER_TS
+    name: ORDER_TS
+    datatype: timestamp
+  - column: SERVED_TS
+    name: SERVED_TS
+    datatype: string
+  - column: SHIFT_END_TIME
+    name: SHIFT_END_TIME
+    datatype: timestamp
+  - column: SHIFT_ID
+    name: SHIFT_ID
+    datatype: number
+  - column: SHIFT_START_TIME
+    name: SHIFT_START_TIME
+    datatype: timestamp
+  - column: TRUCK_ID
+    name: TRUCK_ID
+    datatype: number

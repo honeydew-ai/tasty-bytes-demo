@@ -1,0 +1,8 @@
+type: calculated_attribute
+entity: shifts
+name: am_pm
+owner: david@honeydew.ai
+datatype: string
+labels: []
+sql: |-
+  case when hour(shifts.shift_start_time) < 12 then 'AM' else 'PM' end

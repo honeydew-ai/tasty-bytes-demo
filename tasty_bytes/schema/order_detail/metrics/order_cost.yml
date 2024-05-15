@@ -1,0 +1,11 @@
+type: metric
+entity: order_detail
+name: order_cost
+owner: david@honeydew.ai
+description: |-
+  Order cost as based on menu COGS
+datatype: float
+labels: []
+folder: Revenue Metrics
+sql: |-
+  sum(order_detail.quantity * menu.cost_of_goods_usd)
